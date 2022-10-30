@@ -462,6 +462,9 @@ footer {
 .footer-wrapper {
     width: 1160px;
     margin: 0 220px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 
 }
 footer .logo {
@@ -476,4 +479,95 @@ footer .logo {
 }
 .footer-button {
     margin-top: 111px;
+    margin-bottom: 24px;
+}
+.footer_section {
+    max-width: 300px;
+    height: 407px;
+}
+.social {
+    margin-bottom: 0px;
+    margin-top: 22px;
+}
+
+.social-container {
+    background: rgba(196, 196, 196, 0.5);
+    
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+.social-items {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.footer-menu {
+    margin-left: 2px;
+    
+    
+}
+.f-menu-section {
+    max-width: 495px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom:0;
+    width: 500px;
+}
+footer h3 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+margin-top: 43px;
+margin-bottom: 0;
+
+color: #FFFFFF;
+}
+.form_section {
+    max-width: 365px;
+    height: 407px;
+}
+.email {
+    width: 228px;
+height: 42px;
+margin-top: 14px;
+padding: 10px;
+background-color: #FFFFFF;
+color: #000000;
+}
+
+.submit_btn {
+    color: Green;
+    width: 129px;
+    height: 42px;
+background-color: #f5f7f6;
+padding: 10px 39px;
+margin-left: 8px;
+}
+
+.footer-cred {
+    margin-left: 137px;
+    margin-top: 216px;;
+}
+.footer-cred p {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    font-style: normal;
+font-weight: 100;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+
+
+color: #FFFFFF;
 }
