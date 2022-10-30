@@ -12,6 +12,21 @@ body {
   z-index: 1;
 }
 
+h1 {
+    display: none;
+}
+
+.nav_link:hover {
+    color: orange;
+    cursor: pointer;
+}
+.nav_link:active {
+    color:orange;
+}
+.active{
+    color:orange;
+}
+
 .logo {
   margin: 14px 220px;
   margin-right: 0;
@@ -23,10 +38,12 @@ body {
   text-align: center;
   border-radius: 2px;
   padding: 3.55px 4.75px;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
   color: white;
+  
 }
 header {
   background-color: black;
@@ -48,6 +65,14 @@ li {
 }
 .figma {
   margin-left: 440px;
+  
+}
+button:hover {
+    cursor: pointer;
+}
+
+.figma:hover {
+    color: orange;
 }
 
 .watch-online {
@@ -97,9 +122,16 @@ h2 {
   text-transform: uppercase;
   color: #fff;
   border-radius: 25px;
-  background-color: #f9804b;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border: none;
   margin-left: 178px;
+
+}
+.button:hover {
+    background: #E47209;
+}
+.button:active {
+    background: #4B9200;
 }
 
 .backstage {
@@ -168,6 +200,10 @@ p {
   cursor: pointer;
 }
 
+.arrow:active{
+    background: #4B9200;
+}
+
 .animals {
   margin: -30px auto;
   padding: 0 220px;
@@ -176,12 +212,44 @@ p {
   flex-wrap: wrap;
   position: relative;
 }
-.animal_pic {
-  padding-right: 30px;
+
+.hidden_text {
+    display: none;
+    position: absolute;
+    text-align: center;
+    color: #544e4e;
+    font-size: 48px;
+   
+    /*left: 120px;*/
+
 }
-.animal_pic:last-child {
+.animal_pic:hover {
+    opacity: 20%;
+}
+.animal-card:hover .hidden_text {
+    filter: brightness(0.80);
+    display: block;
+    animation-duration: 3ms;
+    animation-name: slidein;
+    animation-duration: 10s;
+}
+
+@keyframes slidein {
+    from {
+      bottom: 10%;
+    }
+   
+    
+    to {
+      bottom:86.5%;
+    }
+  
+    
+  }
+
+/* .animal_pic:last-child {
   padding-right: 0;
-}
+}*/
 .animal_info {
   display: flex;
   justify-content: space-between;
@@ -190,7 +258,21 @@ p {
   height: 60px;
   padding-left: 16px;
   padding-right: 8px;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
+   
+}
+
+.animal-card {
+    border: 1px solid orange;
+    margin-right: 28px;
+    border-radius: 5px;
+    height: 420px;
+    margin-bottom:24px;
+    position: relative;
+}
+.animal-card:last-child {
+   
+    margin-right: 0;
 }
 .animal_title {
   text-transform: uppercase;
@@ -217,7 +299,7 @@ p {
 }
 .animal_button {
   display: block;
-  margin: 58px auto 100px;
+  margin: 64px auto 100px;
 }
 .strel {
   position: absolute;
@@ -293,6 +375,11 @@ margin-bottom: 40px;
 .pick_and_feed_container p {
 margin: 0 auto 8px;
 }
+.pick_and_feed_container a{
+    border-bottom: 1px solid orange;
+    color: #333B41;
+}
+
 .pick_and_feed_container h4 {
     text-align: center;
     padding-top: 5px;
@@ -424,7 +511,9 @@ text-overflow: ellipsis;
     display: flex;
     justify-content: center;
 }
-
+/*input[type="range"]::-moz-range-progress {
+    background-color: #FE9013;
+  }*/
 .testimonials__input {
     margin: 19px auto 28px auto;
     max-width: 599px;
@@ -436,7 +525,12 @@ text-overflow: ellipsis;
     border-radius: 5px;
     cursor: pointer;
     transition: ease-in-out .5s;
+    
 }
+ 
+  
+
+
 .testimonial-button {
  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 border-radius: 5px;
@@ -502,6 +596,14 @@ footer .logo {
     margin-right: 12px;
 }
 .social-items {
+   /* list-style: none;*/
+    padding-left: 0;
+    display: flex;
+  /*  color: #fff;
+    align-items: center;
+    margin-bottom: 10px;*/
+}
+.social-items a {
     list-style: none;
     padding-left: 0;
     display: flex;
@@ -509,6 +611,13 @@ footer .logo {
     align-items: center;
     margin-bottom: 10px;
 }
+.social-items a:hover .social-container {
+    background-color: #4B9200;
+}
+.social-items a:hover {
+    color:orange
+}
+
 .footer-menu {
     margin-left: 2px;
     
@@ -552,6 +661,10 @@ color: #000000;
 background-color: #f5f7f6;
 padding: 10px 39px;
 margin-left: 8px;
+}
+.submit_btn:hover {
+    color: #f5f7f6;
+    background-color: Green;
 }
 
 .footer-cred {
